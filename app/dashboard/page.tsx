@@ -1,5 +1,5 @@
-import Card from '@/components/Card'
-import { getKPIs } from '@/lib/kpis'
+import Card from '../../components/Card'
+import { getKPIs } from '../../lib/kpis''
 
 export default async function Dashboard() {
 
