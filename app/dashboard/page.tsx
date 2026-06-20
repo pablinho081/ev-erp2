@@ -1,5 +1,5 @@
 import Card from '../../components/Card'
-import { getKPIs } from '../../lib/kpis''
+import { getKPIs } from '../../lib/kpis'
 
 export default async function Dashboard() {
 
@@ -8,9 +8,9 @@ export default async function Dashboard() {
   return (
     <div style={{ padding: 20 }}>
 
-      <h1>EV ERP DASHBOARD</h1>
+      <h1>Dashboard</h1>
 
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(4,1fr)", gap: 10 }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 10 }}>
 
         <Card title="Revenue" value={kpis.revenue} />
         <Card title="Cost" value={kpis.cost} />
