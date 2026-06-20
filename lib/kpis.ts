@@ -1,17 +1,21 @@
-import { supabase } from './supabase'
-
 export async function getKPIs() {
 
-  const { data: orders } = await supabase
-    .from('orders')
-    .select('*')
+  const revenue = 0
+  const cost = 0
 
-  const revenue = orders?.reduce((a,o)=>a + (o.total_price||0),0) || 0
-  const cost = orders?.reduce((a,o)=>a + (o.total_cost||0),0) || 0
+  const margin = revenue - cost
+
+  const marginPct = revenue
+    ? (margin / revenue) * 100
+    : 0
 
   return {
     revenue,
     cost,
-    margin: revenue - cost
+    margin,
+    marginPct,
+    orders: 0,
+    activeOrders: 0,
+    chargers: 0
   }
 }
