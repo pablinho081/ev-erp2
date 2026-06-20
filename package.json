@@ -1,5 +1,5 @@
 {
-  "name": "ev-erp-pro",
+  "name": "ev-erp2",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -12,5 +12,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "@supabase/supabase-js": "^2.39.0"
+  },
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/react": "^18",
+    "@types/node": "^20"
   }
 }
